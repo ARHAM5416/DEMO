@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
@@ -85,7 +88,7 @@
           <li class="nav-item nav-category">
             <span style="color: black;" class="nav-link">Navigation</span>
           </li>
-          <li class="nav-item menu-items">
+          <!-- <li class="nav-item menu-items">
             <a class="nav-link" data-bs-toggle="collapse" href="#others" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
                 <i class="mdi mdi-arrow-bottom-right"></i>
@@ -101,21 +104,21 @@
                 <li class="nav-item"> <a class="nav-link" href="#">Casino Queen</a></li>
               </ul>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item menu-items">
             <a class="nav-link" data-bs-toggle="collapse" href="#allSports" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
                 <i class="mdi mdi-arrow-bottom-right"></i>
               </span>
-              <span style="color: black;" class="menu-title">All Sports</span>
+              <span style="color: wheat;" class="menu-title">All Sports</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="allSports">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="#">Cricket</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Football</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Tennis</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Casino</a></li>
+                <li class="nav-item"> <a class="nav-link" href="cricket.html">Cricket</a></li>
+                <li class="nav-item"> <a class="nav-link" href="football.html">Football</a></li>
+                <li class="nav-item"> <a class="nav-link" href="tennis.html">Tennis</a></li>
+                <li class="nav-item"> <a class="nav-link" href="casino.html">Casino</a></li>
               </ul>
             </div>
           </li>
@@ -408,12 +411,12 @@
               <div class="card-body card-body-padding d-flex align-items-center justify-content-between">
                 <ul class="list-group list-group-horizontal">
                   <li class="nav-item nav-settings d-lg-block">
-                    <a style="color: aliceblue;" class="nav-link" href="#">
+                    <a style="color: aliceblue;" class="nav-link" href="index.html">
                     Home
                     </a>
                   </li>
                   <li class="nav-item nav-settings d-lg-block">
-                    <a style="color: aliceblue;" class="nav-link" href="#">
+                    <a style="color: aliceblue;" class="nav-link" href="cricket.html">
                     Cricket
                     </a>
                   </li>
@@ -423,17 +426,17 @@
                     </a>
                   </li>
                   <li class="nav-item nav-settings d-lg-block">
-                    <a style="color: aliceblue;" class="nav-link" href="#">
+                    <a style="color: aliceblue;" class="nav-link" href="tennis.html">
                     Tennis
                     </a>
                   </li>
                   <li class="nav-item nav-settings d-lg-block">
-                    <a style="color: aliceblue;" class="nav-link" href="#">
+                    <a style="color: aliceblue;" class="nav-link" href="football.html">
                     Football
                     </a>
                   </li>
                   <li class="nav-item nav-settings d-lg-block">
-                    <a style="color: aliceblue;" class="nav-link" href="#">
+                    <a style="color: aliceblue;" class="nav-link" href="casino.html">
                     Casino
                     </a>
                   </li>
@@ -461,22 +464,22 @@
               <div class="col-12 grid-margin stretch-card">
                 <ul class="list-group list-group-horizontal">
                   <li class="nav-item nav-settings d-lg-block">
-                    <a style="color: aliceblue;" class="nav-link" href="#">
+                    <a href="#football" role="tab" data-toggle="tab" style="color: aliceblue;" class="nav-link" href="#">
                     Football
                     </a>
                   </li>
                   <li class="nav-item nav-settings d-lg-block">
-                    <a style="color: aliceblue;" class="nav-link" href="#">
+                    <a href="#tennis" role="tab" data-toggle="tab" style="color: aliceblue;" class="nav-link" href="#">
                     Tennis
                     </a>
                   </li>
                   <li class="nav-item nav-settings d-lg-block">
-                    <a style="color: aliceblue;" class="nav-link" href="#">
-                    Ice Hockey
+                    <a href="#casino" role="tab" data-toggle="tab" style="color: aliceblue;" class="nav-link" href="#">
+                   Casino
                     </a>
                   </li>
                   <li class="nav-item nav-settings d-lg-block">
-                    <a style="color: aliceblue;" class="nav-link" href="#">
+                    <a href="#cricket" role="tab" data-toggle="tab" style="color: aliceblue;" class="nav-link" href="#">
                     Cricket
                     </a>
                   </li>
@@ -500,9 +503,18 @@
                   </div>
                 </div> -->
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 grid-margin stretch-card">
+            <!-- </div>
+            <div class="tab-content">
+              <div style="color: black;" class="tab-pane active" id="hometab">Write something for home tab</div>
+              <div style="color: black;" class="tab-pane" id="javatab">The Java is an object-oriented programming language <br /> that was developed by James Gosling from the Sun Microsystems in 1995.</div>
+              <div style="color: black;" class="tab-pane" id="csharptab">C# is also a programming language</div>
+              <div style="color: black;" class="tab-pane" id="mysqltab">MySQL is a databased mostly used for web applications.</div>
+              <div style="color: black;" class="tab-pane" id="jquerytab">jQuery content here</div>
+              
+            </div> -->
+
+            <div class="row tab-content">
+              <div class="tab-pane active" id="hometab" class="col-md-12 grid-margin stretch-card">
                 <div style="background-color: white;" class="card">
                   <div class="card-body">
                     <div class="d-flex flex-row justify-content-between">
@@ -599,6 +611,242 @@
                           </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="football" class="col-lg-12 stretch-card">
+                <div style="background-color: white;" class="card">
+                  <div class="card-body">
+                    <h4 style="color: black;" class="card-title">Football</h4>
+                    <!-- <p class="card-description"> Game
+                    </p> -->
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-contextual table-borderless">
+                        <thead>
+                          <tr>
+                            <th> Game </th>
+                            <th> 1 </th>
+                            <th> x </th>
+                            <th> 2 </th>
+                            <!-- <th> Deadline </th> -->
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="table-info">
+                            <td> Test Y v Test Z / Apr 4 2022 6:00PM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                      
+                          </tr>
+                          <tr class="table-info">
+                            <td> Test Y v Test Z / Apr 4 2022 6:00PM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            
+                          </tr>
+                          <tr class="table-info">
+                            <td> Test Y v Test Z / Apr 4 2022 6:00PM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            
+                          </tr>
+                          <tr class="table-info">
+                            <td> Test Y v Test Z / Apr 4 2022 6:00PM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                           
+                          </tr>
+                          <tr class="table-info">
+                            <td> Test Y v Test Z / Apr 4 2022 6:00PM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                           
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tennis" class="col-lg-12 stretch-card">
+                <div style="background-color: white;" class="card">
+                  <div class="card-body">
+                    <h4 style="color: black;" class="card-title">Tennis</h4>
+                    <!-- <p class="card-description"> Game
+                    </p> -->
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-contextual table-borderless">
+                        <thead>
+                          <tr>
+                            <th> Game </th>
+                            <th> 1 </th>
+                            <th> x </th>
+                            <th> 2 </th>
+                            <!-- <th> Deadline </th> -->
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="table-info">
+                            <td> Patrick Fitzgerald v David Hough / May 15 2022 7:30AM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                      
+                          </tr>
+                          <tr class="table-info">
+                            <td> Patrick Fitzgerald v David Hough / May 15 2022 7:30AM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            
+                          </tr>
+                          <tr class="table-info">
+                            <td> Patrick Fitzgerald v David Hough / May 15 2022 7:30AM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            
+                          </tr>
+                          <tr class="table-info">
+                            <td> Patrick Fitzgerald v David Hough / May 15 2022 7:30AM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                           
+                          </tr>
+                          <tr class="table-info">
+                            <td> Patrick Fitzgerald v David Hough / May 15 2022 7:30AM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                           
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="casino" class="col-lg-12 stretch-card">
+                <div style="background-color: white;" class="card">
+                  <div class="card-body">
+                    <h4 style="color: black;" class="card-title">Casino</h4>
+                    <!-- <p class="card-description"> Game
+                    </p> -->
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-contextual table-borderless">
+                        <thead>
+                          <tr>
+                            <th> Game </th>
+                            <th> 1 </th>
+                            <th> x </th>
+                            <th> 2 </th>
+                            <!-- <th> Deadline </th> -->
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="table-info">
+                            <td> Super Star Casino </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                      
+                          </tr>
+                          <tr class="table-info">
+                            <td> Super Star Casino </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            
+                          </tr>
+                          <tr class="table-info">
+                            <td> Super Star Casino </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            
+                          </tr>
+                          <tr class="table-info">
+                            <td> Super Star Casino </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                           
+                          </tr>
+                          <tr class="table-info">
+                            <td> Super Star Casino </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                           
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="cricket" class="col-lg-12 stretch-card">
+                <div style="background-color: white;" class="card">
+                  <div class="card-body">
+                    <h4 style="color: black;" class="card-title">Cricket</h4>
+                    <!-- <p class="card-description"> Game
+                    </p> -->
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-contextual table-borderless">
+                        <thead>
+                          <tr>
+                            <th> Game </th>
+                            <th> 1 </th>
+                            <th> x </th>
+                            <th> 2 </th>
+                            <!-- <th> Deadline </th> -->
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="table-info">
+                            <td> Test Y v Test Z / Apr 4 2022 6:00PM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                      
+                          </tr>
+                          <tr class="table-info">
+                            <td> Test Y v Test Z / Apr 4 2022 6:00PM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            
+                          </tr>
+                          <tr class="table-info">
+                            <td> Test Y v Test Z / Apr 4 2022 6:00PM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            
+                          </tr>
+                          <tr class="table-info">
+                            <td> Test Y v Test Z / Apr 4 2022 6:00PM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                           
+                          </tr>
+                          <tr class="table-info">
+                            <td> Test Y v Test Z / Apr 4 2022 6:00PM (IST) </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                           
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -1036,7 +1284,7 @@
           <!-- partial:partials/_footer.html -->
           <footer style="background-color: white;" class="footer">
             <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2021</span>
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block"></span>
             </div>
           </footer>
           <!-- partial -->
